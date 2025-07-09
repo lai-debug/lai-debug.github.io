@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算术题挑战（增强版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>算术题挑战</h1>
+        
+        <!-- 难度选择按钮组 -->
+        <div class="difficulty-group">
+            <button class="difficulty-btn active" data-level="easy">简单</button>
+            <button class="difficulty-btn" data-level="medium">中等</button>
+            <button class="difficulty-btn" data-level="hard">困难</button>
+        </div>
+        
+        <!-- 得分与倒计时 -->
+        <div class="status-bar">
+            <span class="score">得分：<span id="score">0</span></span>
+            <span class="countdown" id="countdown">20</span>
+        </div>
+        
+        <!-- 题目区域 -->
+        <div class="question-box" id="question">加载中...</div>
+        
+        <!-- 输入与提交 -->
+        <input type="number" id="answer-input" placeholder="输入答案" autofocus>
+        <button id="submit-btn">提交答案</button>
+        
+        <!-- 提示信息 -->
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
